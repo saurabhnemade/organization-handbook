@@ -4,24 +4,29 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	outDir: "docs", // Github pages requires this directory
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Rocket Handbook 🎉',
+			description: 'A starter template for creating an organization handbook',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/saurabhnemade/organization-handbook-starter',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Guideline',
+					autogenerate: { directory: 'guidelines' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'how-to',
+					autogenerate: { directory: 'how-to' },
 				},
+				{
+					label: 'What to use?',
+					items: [
+						{ label: 'Tools', slug: 'tools' },
+					]
+				}
 			],
 		}),
 	],
