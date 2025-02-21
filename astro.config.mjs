@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	outDir: "docs", // Github pages requires this directory
-	base: '/organization-handbook/', // Github requires this base path if you are hosting on github pages. its name of repository
+	// base: '/organization-handbook/', // Github requires this base path if you are hosting on github pages. its name of repository
 	integrations: [
 		starlight({
 			title: 'Rocket Handbook 🎉',
