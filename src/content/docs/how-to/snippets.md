@@ -30,3 +30,10 @@ export AWS_DEFAULT_PROFILE=saurabhnemade
 ```
 aws sts get-caller-identity
 ```
+
+
+### VS CODE Disable auto file navigation on file explorer
+
+```
+Settings ->  "explorer.autoReveal": false
+```
