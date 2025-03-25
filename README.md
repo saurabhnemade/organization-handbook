@@ -3,7 +3,7 @@
 
 ## Demo
 
-https://saurabhnemade.github.io/organization-handbook/
+https://organization-handbook.vercel.app
 
 ## 🚀 Project Structure
 
